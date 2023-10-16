@@ -166,15 +166,32 @@ main {
     box-shadow: 2px 2px 1px inset;
 }
 
-/* .footer {
-    bottom: 0;
-    position: relative;
-    padding: 1rem;
-    background-color: #000000;
-    width: 100%;
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .nav-bar__links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: 2rem;
+        width: 100%;
+    }
 }
 
-.footer__text {
-    color: white;
-    text-align: right;
-} */
+@media screen and (min-width: 1300px){
+    .content__project {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .content__project {
+        width: 70%;
+    }
+
+    .btn {
+        width: 60%;
+    }
+}
