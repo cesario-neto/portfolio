@@ -33,6 +33,7 @@
             </nav>
         </header>
         <main class="bg-border bg-main-color">
+
             <section class="content">
                 <p class="text-white-color">Esse projeto mostra os número pares, ímpares e primos de determinado
                     intervalo</p>
@@ -40,10 +41,24 @@
                     projeto.</p>
             </section>
 
+            <section class="content">
+                <div class="content__project bg-border">
+                    <div class="flex-row center-content">
+                        <input type="number" min="0" placeholder="Início" id="start-evenOddPrime"
+                            class="content__project__input text-center-direction">
+                        <input type="number" min="0" placeholder="Final" id="end-evenOddPrime"
+                            class="content__project__input text-center-direction">
+                    </div>
+                    <button class="btn btn-primary" id="btn-evenOddPrime">Enviar</button>
+                    <div class="result text-white-color text-center-direction">
+                    </div>
+                </div>
+            </section>
+
         </main>
     </div>
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/evenOddPrime.js"></script>
 </body>
 
 </html>
